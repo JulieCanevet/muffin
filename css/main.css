@@ -95,6 +95,226 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+        background-image: url(../img/home_phone.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #home{
+        display: none;
+    }
+    #blue{
+        width: 100%;
+        min-height: 100vh;
+    }
+    #blue{
+        background-color: #e081e699;
+    }
+    #presentation{
+        background-color: white;
+        padding: 1em;
+        text-align: center;
+        font-family: avenir;
+        font-size: 18px;
+        width: 80%;
+        margin: auto;
+        margin-top: -15px;
+        margin-bottom: 4em;
+    }
+    .width{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .width img{
+        max-width: 50%;
+        margin: auto;
+        margin-top: 2em;
+        z-index: 3;
+    }
+    #presentation p{
+        margin: 3em;
+        position: relative;
+    }
+    #presentation h2{
+        padding-bottom: .5em;
+        border-bottom: 5px solid yellow;
+        margin: 1em 25% auto 25%;
+        font-family: 'Amatic SC', cursive;
+        font-size: 3em;
+    }
+
+.desktop{
+    display: none;
+}
+@media screen and (min-width: 1080px) {
+    .desktop{
+        display: block;
+    }
+    body{
+       background-image: url(../img/muffin_desktop.png);
+       background-size: 100%;
+    }
+    #home{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/accueil.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #blue{
+        background-color: #AAE6F0;
+    }
+    .width{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #presentation{
+        width: 45%;
+        margin: 3em auto 3em 2em;
+    }
+    .width img{
+        box-shadow: 0 0 15px grey;
+        margin: auto;
+    }
+
+}
+
+/* ************** Partie presentation des recettes ************* */
+    #recette{
+        margin-top: 16em;
+        padding: 1em;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        background-color: white;
+    }
+    #recette h2, #contact h2{
+        margin-left: 2em;
+        font-family: 'Amatic SC', cursive;
+        font-size: 2.5em;
+    }
+    .recette {
+         width: 100%;
+         display: flex;
+         justify-content: space-around;
+         flex-wrap: wrap;
+         margin-top: 1.5em;
+        }
+        
+    .recette figure {
+        width: 70%;
+        margin: 1.5em auto 1.5em auto;
+        text-align: center;
+        }
+
+    .recettes{
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 350px;
+        height: 250px;
+    }
+
+/* choix des bonnes images pour les recettes */
+    .recettes:nth-child(1){
+        background-image: url(../img/recette1.png);
+    }
+    
+    .recettes:nth-child(2){
+        background-image: url(../img/recette2.png);
+    }
+    
+    .recettes:nth-child(3){
+        background-image: url(../img/recette3.png);
+    }
+    
+    .recettes:nth-child(4){
+        background-image: url(../img/recette4.png);
+    }
+    
+    .recettes:nth-child(5){
+        background-image: url(../img/recette5.png);
+    }
+    
+    .recettes:nth-child(6){
+        background-image: url(../img/recette6.png); 
+    }
+
+    .couleurHover, .couleurHover button {
+        width: 100%;
+        height: 100%;
+    }
+
+    .couleurHover button {
+        background-color: #FFFFFF00;
+        background-color: rgba(255, 255, 255, 0);
+        color: transparent;
+        border-color: transparent;
+        font-family: 'Amatic SC', cursive;
+    }
+    .couleurHover button:hover{
+        background-color: #FFFFFF50;
+        background-color: rgba(255, 255, 255, .5);
+        transition : .8s;
+        color: black;
+        border-color: transparent;
+        font-size: 3em;    
+    }
+
+/* mise en forme des modaux */
+    .modal h5 {
+        font-family: 'Amatic SC', cursive;    }
+    }
+    .modal figure {
+        border: 1px solid black;
+    }
+
+@media screen and (min-width: 600px) {
+    .recette figure {
+        width: 45%;
+    }
+}
+@media screen and (min-width: 1080px) {
+    #transition{
+        width: 100%;
+        height: 300px;
+    }
+    #recette{
+        margin-top: 1em;
+    }
+    .recette figure {
+        width: 30%;
+    }
+    #recette h2{
+    font-size: 4.5em;
+    margin-left: 1em;
+    }
+}
+
+#contact{
+    background-color: #e1207a;
+    padding: 3em;
+}
+@media screen and (min-width: 600px) {
+    #contact{
+        padding: 5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
