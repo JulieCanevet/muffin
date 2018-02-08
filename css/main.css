@@ -99,6 +99,7 @@ body{
         background-image: url(../img/home_phone.jpg);
         background-size: cover;
         background-attachment: fixed;
+        font-family: 'Amatic SC', cursive;   
     }
     #home{
         display: none;
@@ -137,6 +138,7 @@ body{
     #presentation p{
         margin: 3em;
         position: relative;
+        font-family: 'Montserrat', sans-serif;
     }
     #presentation h2{
         padding-bottom: .5em;
@@ -268,7 +270,7 @@ body{
 
 /* mise en forme des modaux */
     .modal h5 {
-        font-family: 'Amatic SC', cursive;    }
+        font-family: 'Amatic SC', cursive;    
     }
     .modal figure {
         border: 1px solid black;
@@ -297,12 +299,25 @@ body{
 }
 
 #contact{
-    background-color: #e1207a;
+    background-color: #fbe7f6;
     padding: 3em;
+}
+label{
+    font-size: 2em;
+}
+#contact h2{
+    color: black;
+}
+#contact input, #contact textarea{
+    background-color: #fad1f1;
+}
+.input-group-addon{
+    background-color: #fad1f1;
+    color: black;
 }
 @media screen and (min-width: 600px) {
     #contact{
-        padding: 5em;
+        padding: 5em ;
     }
 }
 
